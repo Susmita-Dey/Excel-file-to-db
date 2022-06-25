@@ -2,9 +2,10 @@ var express = require("express");
 var mongoose = require("mongoose");
 var multer = require("multer");
 var path = require("path");
-var userModel = require("./models/userModel");
+var userModel = require("./Models/userModel");
 var excelToJson = require("convert-excel-to-json");
 var bodyParser = require("body-parser");
+var fs = require("fs");
 
 var storage = multer.diskStorage({
   destination: (req, file, cb) => {
