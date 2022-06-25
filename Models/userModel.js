@@ -1,14 +1,14 @@
 var mongoose  =  require('mongoose');  
    
 var excelSchema = new mongoose.Schema({  
-    name:{  
+   name:{  
       type:String  
    },  
    email:{  
       type:String  
    },    
    mobile:{  
-      type:Number  
+      type:String
    },
    dob:{  
       type:String 
