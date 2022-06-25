@@ -24,7 +24,7 @@ mongoose
 var app = express();
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.resolve(__dirname, "public/uploads")));
+app.use(express.static(path.resolve(__dirname, "public")));
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
@@ -66,7 +66,7 @@ function importExcelData2MongoDB(filePath) {
 }
 
 app.post("/uploadfile", upload.single("uploadfile"), (req, res) => {
-  importExcelData2MongoDB(__dirname + "/uploads/" + req.file.filename);
+  importExcelData2MongoDB(__dirname + "/public/uploads/" + req.file.filename);
   console.log(res);
 });
 
