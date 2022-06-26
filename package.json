@@ -17,6 +17,10 @@
     "http-errors": "~1.6.3",
     "mongoose": "^6.4.0",
     "morgan": "~1.9.1",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "xlsx-to-json-lc": "^0.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
   }
 }
